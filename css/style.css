@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+body {
+    margin: 0;
+    background-color: #EDEDED;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header {
+    margin: 0;
+    height: 56px;
+    padding: 0 16px 0 24px;
+    background-color: #adb8ffff;
+    color: #e5eae9;
+}
+
+header span {
+    font-family: 'Kaushan Script', cursive;
+    display: block;
+    position: relative;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding-top: 13px;
+}
+
+header span a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+header span a:hover {
+    color: rgb(112, 119, 165);
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+    padding-top: 10px;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+header li a:hover {
+    color: rgb(112, 119, 165);
+}
+/*
+header .active {
+    background-color: #4CAF50;
+}*/
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 4px 4px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #adb8ff;
+    background: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #adb8ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    overflow: auto;
+    resize: none;
+    border: 1px solid #adb8ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #adb8ffff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 43%;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(115, 133, 248);
+}
+
+/* Book */
+.book {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.bookBox {
+    margin: 20px;
+}
+
+.bookBox p {
+    font-size: 12px;
+}
+
+.section {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.aboutImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #adb8ffff;
+    color: #e5eae9;
+    margin-top: 20px;
+}
+
+/* Grid System */
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-left: 10px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
