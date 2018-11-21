@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 body {
     margin: 0;
     background-color: #EDEDED;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -39,6 +40,7 @@ header span a:hover {
 ol {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 header ul {
@@ -129,8 +131,18 @@ input[type=submit]:hover {
 /* Book */
 .book {
     background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+    width: 130px;
+    height: 200px;
+    padding: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: rgb(115, 133, 248);
 }
 
 .bookBox {
