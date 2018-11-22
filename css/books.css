@@ -1,0 +1,15 @@
+.view_more {
+    color: rgb(115, 133, 248);
+}
+
+.view_more:hover {
+    color: rgb(112, 119, 165);
+}
+
+.autor {
+    margin-top: 0;
+}
+
+.sinopse {
+    text-align: justify;
+}

@@ -7,6 +7,7 @@
     <title>MyBooksList</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/books.css" />
 </head>
 
 <body>
@@ -28,25 +29,338 @@
         <div class="col-4">
             <div class="card">
                 <h3>Filtrar Pesquisa</h3>
-
+                <p>Gênero</p>
+                <div class="row">
+                    <div class="col-6">
+                        <label class="container">Ação
+                            <input type="checkbox" name="gender1" value="acao">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="container">Romance
+                            <input type="checkbox" name="gender2" value="romance">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="container">Ficção
+                            <input type="checkbox" name="gender3" value="ficcao">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="container">Aventura
+                            <input type="checkbox" name="gender4" value="aventura">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="container">Drama
+                            <input type="checkbox" name="gender5" value="drama">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="container">Fantasia
+                            <input type="checkbox" name="gender6" value="fantasia">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <p>Classificação em Estrelas</p>
+                <div class="row">
+                    <div class="col-2_5">
+                        <label class="container">1
+                            <input type="radio" name="radio">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">2
+                            <input type="radio" name="radio">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">3
+                            <input type="radio" name="radio">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">4
+                            <input type="radio" name="radio">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">5
+                            <input type="radio" name="radio">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-8">
-            <div class="card">
-                <div class="row">
-                    <div class="col-12 bookBox">
-                        <a href="#">
-                            <!-- <div class="book" style="height:200px; width: 130px;"></div> -->
-                            <img class="book" src="assets/img/acordo_pecaminoso.jpg" alt="Um Acordo Pecaminoso">
-                            <p>Um Acordo Pecaminoso</p>
-                        </a>
+            <div class="row">
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/acordo_pecaminoso.jpg" alt="Um Acordo Pecaminoso">
+                        </div>
+                        <div class="col-10">
+                            <h4>Um Acordo Pecaminoso</h4>
+                            <p class="autor"><small>por Lisa Kleypas</small></p>
+                            <p class="sinopse">Lady Pandora Ravenel é muito diferente das debutantes de sua idade.
+                                Enquanto a maioria
+                                delas não perde uma festa da temporada londrina e sonha encontrar um marido, Pandora
+                                prefere ficar em casa idealizando jogos de tabuleiro e planejando se tornar uma mulher
+                                independente... <a href="#" class="view_more">ver mais</a></p>
+                        </div>
                     </div>
-                    <div class="col-12 bookBox">
-                        <a href="#">
-                            <!-- <div class="book" style="height:200px; width: 130px;"></div> -->
-                            <img class="book" src="assets/img/acordo_pecaminoso.jpg" alt="Um Acordo Pecaminoso">
-                            <p>Um Acordo Pecaminoso</p>
-                        </a>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/almas_gemeas.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Almas gêmeas</h4>
+                            <p class="autor"><small>por Nicholas Sparks</small></p>
+                            <p class="sinopse">Hope Anderson está numa encruzilhada. Aos 36 anos, namora o mesmo homem
+                                há seis, mas não tem perspectivas de casamento. Quando seu pai é diagnosticado com uma
+                                grave doença degenerativa, ela resolve passar uma semana na casa de praia da família,
+                                na Carolina do Norte... <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/homem_mais_inteligente.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>O homem mais inteligente da história</h4>
+                            <p class="autor"><small>por Augusto Cury</small></p>
+                            <p class="sinopse">Psicólogo e pesquisador, Dr. Marco Polo desenvolveu uma teoria inédita
+                                sobre o funcionamento da mente e a gestão da emoção. Após sofrer uma terrível perda
+                                pessoal, ele vai a Jerusalém participar de um ciclo de conferências na ONU e é
+                                confrontado com uma pergunta surpreendente...
+                                <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/primeiro_homem.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>O primeiro homem: A vida de Neil Armstrong</h4>
+                            <p class="autor"><small>por James R. Hansen</small></p>
+                            <p class="sinopse">Em julho de 1969, o mundo parou para assistir à primeira pessoa a pisar
+                                na superfície de outro corpo celeste que não a Terra. Você já deve ter ouvido a frase
+                                que Neil Armstrong disse naquele momento: “É um pequeno passo para um homem, um grande
+                                salto para a humanidade.” <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/oGuiaDoMochileiroDasGalaxias.jpeg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>O guia do mochileiro das galáxias</h4>
+                            <p class="autor"><small>por Douglas Adams</small></p>
+                            <p class="sinopse">Considerado um dos maiores clássicos da literatura de ficção científica,
+                                O guia do mochileiro das galáxias vem encantando gerações de leitores ao redor do mundo
+                                com seu humor afiado. Este é o primeiro título da famosa série escrita por Douglas
+                                Adams, que conta as aventuras espaciais do... <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/sword_art_online_progressive.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Sword Art Online Progressive</h4>
+                            <p class="autor"><small>por Reki Kawahara</small></p>
+                            <p class="sinopse">One month has passed since Akihiko Kayaba's deadly game began, and the
+                                body count continues to rise. Two thousand players are already dead. <a href="#" class="view_more">ver
+                                    mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/irma_da_lua.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>A irmã da lua</h4>
+                            <p class="autor"><small>por Lucinda Riley</small></p>
+                            <p class="sinopse">Em A irmã da lua, quinto volume da série As Sete Irmãs, duas jovens
+                                separadas por um século têm suas vidas entrelaçadas numa emocionante história sobre fé,
+                                tradição, paixão e sobrevivência. <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/cronicas_narnia.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>As Crônicas de Nárnia</h4>
+                            <p class="autor"><small>por C. S. Lewis</small></p>
+                            <p class="sinopse">Viagens ao fim do mundo, criaturas fantásticas e batalhas épicas entre o
+                                bem e o mal - o que mais um leitor poderia querer de um livro? O livro que tem tudo
+                                isso é 'O leão, a feiticeira e o guarda-roupa', escrito em 1949 por Clive Staples
+                                Lewis. <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/ligar_o_fod*-se.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>A Sutil Arte de Ligar o F*da-Se</h4>
+                            <p class="autor"><small>por Mark Manson e Joana Faro</small></p>
+                            <p class="sinopse">Chega de tentar buscar um sucesso que só existe na sua cabeça. Chega de
+                                se torturar para pensar positivo enquanto sua vida vai ladeira abaixo. Chega de se
+                                sentir inferior por não ver o lado bom de estar no fundo do poço. <a href="#" class="view_more">ver
+                                    mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/democracias_morrem.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Como as democracias morrem</h4>
+                            <p class="autor"><small>por Steven Levitsky e Daniel Ziblatt</small></p>
+                            <p class="sinopse">Uma análise crua e perturbadora do fim das democracias em todo o mundo
+                                Democracias tradicionais entram em colapso? Essa é a questão que Steven Levitsky e
+                                Daniel Ziblatt respondem ao discutir o
+                                modo como a eleição de Donald Trump se tornou possível. <a href="#" class="view_more">ver
+                                    mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/brave_new_world.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Admirável mundo novo</h4>
+                            <p class="autor"><small>por Aldous Leonard Huxley</small></p>
+                            <p class="sinopse">Um clássico moderno, o romance distópico de Aldous Huxley é
+                                incontornável para quem procura um dos exemplos mais marcantes da tematização de
+                                estados autoritários, ao lado de 1984, de George Orwell. <a href="#" class="view_more">ver
+                                    mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/harry_poter.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Harry Potter e a Pedra Filosofal</h4>
+                            <p class="autor"><small>por J. K. Rowling e Lia Wyler</small></p>
+                            <p class="sinopse">Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por
+                                um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa
+                                dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos,
+                                Harry foi uma espécie de gata borralheira: ... <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/SAOP3.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Sword Art Online Progressive 3 (light novel)</h4>
+                            <p class="autor"><small>por Reki Kawahara</small></p>
+                            <p class="sinopse">Having said their good-byes to the mysterious elven knight Kizmel,
+                                Kirito and Asuna set their sights on the fourth floor of Aincrad. But once they open
+                                the door, they find the way forward blocked by a powerfully flowing river. <a href="#"
+                                    class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/the_book_thief.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>A menina que roubava livros</h4>
+                            <p class="autor"><small>por Markus Zusak</small></p>
+                            <p class="sinopse">A trajetória de Liesel Meminger é contada por uma narradora mórbida,
+                                surpreendentemente simpática. Ao perceber que a pequena ladra de livros lhe escapa, a
+                                Morte afeiçoa-se à menina e rastreia suas pegadas de 1939 a 1943. Traços de uma
+                                sobrevivente: a mãe comunista, perseguida pelo nazismo... <a href="#" class="view_more">ver
+                                    mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/como_agarrar_uma_herdeira.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Como agarrar uma herdeira: Agentes da Coroa 1</h4>
+                            <p class="autor"><small>por Julia Quinn</small></p>
+                            <p class="sinopse">Quando Caroline Trent é sequestrada por engano por Blake Ravenscroft,
+                                não faz o menor esforço para se libertar das garras do agente perigosamente sedutor.
+                                Afinal, está mesmo querendo escapar do casamento forçado com um homem que só se
+                                interessa pela fortuna que ela herdou. <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/como_se_casar_com_um_marques.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Como se casar com um marquês: Agentes da Coroa 2</h4>
+                            <p class="autor"><small>por Julia Quinn</small></p>
+                            <p class="sinopse">ill Barnett Elizabeth Hotchkiss precisa se casar com um homem rico, e
+                                bem rápido. Com três irmãos mais novos para sustentar, ela sabe que não lhe resta outra
+                                alternativa. Então, quando encontra o livro Como se casar com um marquês na biblioteca
+                                de lady Danbury...
+                                <a href="#" class="view_more">ver mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card">
+                    <div class="row">
+                        <div class="col-2">
+                            <img class="bookSection" src="assets/img/Como eu era antes de você.jpg" alt="Almas gêmeas">
+                        </div>
+                        <div class="col-10">
+                            <h4>Como eu era antes de você</h4>
+                            <p class="autor"><small>por Jojo Moyes</small></p>
+                            <p class="sinopse">Aos 26 anos, Louisa Clark não tem muitas ambições. Ela mora com os pais,
+                                a irmã mãe solteira, o sobrinho pequeno e um avô que precisa de cuidados constantes
+                                desde que sofreu um derrame. Trabalha como garçonete num café, um emprego que não paga
+                                muito... <a href="#" class="view_more">ver mais</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
