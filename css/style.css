@@ -7,6 +7,50 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+header .search-container {
+    margin-top: 5px;
+    float: right;
+}
+
+header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+header .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+header .search-container button:hover {
+    background: #ccc;
+}
+  
+@media screen and (max-width: 600px) {
+    header .search-container {
+      float: none;
+    }
+    header a, header input[type=text], header .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    header input[type=text] {
+      border: 1px solid #ccc;  
+    }
+}
+
 header {
     margin: 0;
     height: 56px;
@@ -72,6 +116,16 @@ header .active {
     background-color: #4CAF50;
 }*/
 
+.login {
+    display: block;
+    color: white;
+    margin-top: 4px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 /* Add a card effect for articles */
 .card {
     background-color: white;
@@ -90,7 +144,7 @@ select {
     box-sizing: border-box;
 }
 
-input[type=text], input[type=email], input[type=number] {
+input[type=text], input[type=email], input[type=number], input[type=password] {
     width: 100%;
     padding: 5px 5px;
     margin: 8px 0;
@@ -221,6 +275,28 @@ textarea {
     border: 1px solid #adb8ff;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.moreComents {
+    color: gray;
+}
+
+.moreComents:hover {
+    color: rgb(63, 62, 62);
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #adb8ffff;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    width: 160px;
+    font-size: 15px;
 }
 
 input[type=submit] {
