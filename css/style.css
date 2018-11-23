@@ -285,6 +285,11 @@ a:hover {
     font-size: 12px;
 }
 
+.authorSection {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .section {
     margin-left: 200px;
     margin-right: 200px;
