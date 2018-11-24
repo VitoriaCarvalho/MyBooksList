@@ -10,6 +10,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/books.css" />
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .filterDiv {
+            display: none; /* Hidden by default */
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,37 +80,37 @@
                 <div class="row">
                     <div class="col-6">
                         <label class="container">Ação
-                            <input type="checkbox" name="gender1" value="acao">
+                            <input type="checkbox" name="gender1" id="acao" value="acao" onclick="fs('acao')">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="col-6">
                         <label class="container">Romance
-                            <input type="checkbox" name="gender2" value="romance">
+                            <input type="checkbox" name="gender2" id="romance" value="romance" onclick="fs('romance')">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="col-6">
                         <label class="container">Ficção
-                            <input type="checkbox" name="gender3" value="ficcao">
+                            <input type="checkbox" name="gender3" id="ficcao" value="ficcao" onclick="fs('ficcao')">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="col-6">
                         <label class="container">Aventura
-                            <input type="checkbox" name="gender4" value="aventura">
+                            <input type="checkbox" name="gender4" id="aventura" value="aventura" onclick="fs('aventura')">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="col-6">
                         <label class="container">Drama
-                            <input type="checkbox" name="gender5" value="drama">
+                            <input type="checkbox" name="gender5" id="drama" value="drama" onclick="fs('drama')">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="col-6">
                         <label class="container">Fantasia
-                            <input type="checkbox" name="gender6" value="fantasia">
+                            <input type="checkbox" name="gender6" id="fantasia" value="fantasia" onclick="fs('fantasia')">
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -109,31 +119,31 @@
                 <div class="row">
                     <div class="col-2_5">
                         <label class="container">1
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio" onclick="filterSelection(' 1')">
                             <span class="radiobtn"></span>
                         </label>
                     </div>
                     <div class="col-2_5">
                         <label class="container">2
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio" onclick="filterSelection(' 2')">
                             <span class="radiobtn"></span>
                         </label>
                     </div>
                     <div class="col-2_5">
                         <label class="container">3
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio" onclick="filterSelection(' 3')">
                             <span class="radiobtn"></span>
                         </label>
                     </div>
                     <div class="col-2_5">
                         <label class="container">4
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio" onclick="filterSelection(' 4')">
                             <span class="radiobtn"></span>
                         </label>
                     </div>
                     <div class="col-2_5">
                         <label class="container">5
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio" onclick="filterSelection(' 5')">
                             <span class="radiobtn"></span>
                         </label>
                     </div>
@@ -142,7 +152,23 @@
         </div>
         <div class="col-8">
             <div class="row">
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv romance 5">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="livroDaJulia.html"><img class="bookSection" src="assets/img/como_agarrar_uma_herdeira.jpg" alt="Almas gêmeas"></a>
+                        </div>
+                        <div class="col-10">
+                            <a href="livroDaJulia.html"><h4>Como agarrar uma herdeira: Agentes da Coroa 1</h4></a>
+                            <p class="autor"><small>por Julia Quinn</small></p>
+                            <p class="sinopse">Quando Caroline Trent é sequestrada por engano por Blake Ravenscroft,
+                                não faz o menor esforço para se libertar das garras do agente perigosamente sedutor.
+                                Afinal, está mesmo querendo escapar do casamento forçado com um homem que só se
+                                interessa pela fortuna que ela herdou. <a href="livroDaJulia.html" class="view_more">ver
+                                    mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 bookBox card filterDiv 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/acordo_pecaminoso.jpg" alt="Um Acordo Pecaminoso">
@@ -158,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/almas_gemeas.jpg" alt="Almas gêmeas">
@@ -173,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv 5">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/homem_mais_inteligente.jpg" alt="Almas gêmeas">
@@ -189,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/primeiro_homem.jpg" alt="Almas gêmeas">
@@ -204,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv ficcao 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/oGuiaDoMochileiroDasGalaxias.jpeg" alt="Almas gêmeas">
@@ -219,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv ficcao acao fantasia 5">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/sword_art_online_progressive.jpg" alt="Almas gêmeas">
@@ -233,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/irma_da_lua.jpg" alt="Almas gêmeas">
@@ -247,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv fantasia acao 5">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/cronicas_narnia.jpg" alt="Almas gêmeas">
@@ -262,10 +288,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv 3">
                     <div class="row">
                         <div class="col-2">
-                            <img class="bookSection" src="assets/img/ligar_o_fod*-se.jpg" alt="Almas gêmeas">
+                            <img class="bookSection" src="assets/img/ligar_o_foda-se.jpg" alt="Almas gêmeas">
                         </div>
                         <div class="col-10">
                             <h4>A Sutil Arte de Ligar o F*da-Se</h4>
@@ -277,7 +303,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv 2">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/democracias_morrem.jpg" alt="Almas gêmeas">
@@ -293,7 +319,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv ficcao 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/brave_new_world.jpg" alt="Almas gêmeas">
@@ -308,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv acao fantasia 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/harry_poter.jpg" alt="Almas gêmeas">
@@ -323,7 +349,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv acao ficcao fantasia 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/SAOP3.jpg" alt="Almas gêmeas">
@@ -338,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/the_book_thief.jpg" alt="Almas gêmeas">
@@ -354,23 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
-                    <div class="row">
-                        <div class="col-2">
-                            <img class="bookSection" src="assets/img/como_agarrar_uma_herdeira.jpg" alt="Almas gêmeas">
-                        </div>
-                        <div class="col-10">
-                            <h4>Como agarrar uma herdeira: Agentes da Coroa 1</h4>
-                            <p class="autor"><small>por Julia Quinn</small></p>
-                            <p class="sinopse">Quando Caroline Trent é sequestrada por engano por Blake Ravenscroft,
-                                não faz o menor esforço para se libertar das garras do agente perigosamente sedutor.
-                                Afinal, está mesmo querendo escapar do casamento forçado com um homem que só se
-                                interessa pela fortuna que ela herdou. <a href="livroDaJulia.html" class="view_more">ver
-                                    mais</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv romance 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/como_se_casar_com_um_marques.jpg" alt="Almas gêmeas">
@@ -386,7 +396,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card">
+                <div class="col-12 bookBox card filterDiv romance 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/Como eu era antes de você.jpg" alt="Almas gêmeas">
@@ -512,6 +522,56 @@
     <div class="footer">
         <h2>Site feito por Jederson Luz e Vitória Carvalho</h2>
     </div>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function fs(gender) {
+            var auxG = document.getElementById(gender)
+            console.log(auxG.checked);
+            if (auxG.checked == true) {
+                console.log(gender);
+                filterSelection(gender)
+            } else {
+                filterSelection('all')
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+    </script>
 </body>
 
 </html>
