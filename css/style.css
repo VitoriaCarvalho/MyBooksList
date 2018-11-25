@@ -144,6 +144,16 @@ select {
     box-sizing: border-box;
 }
 
+input[type=date] {
+    width: 100%;
+    padding: 2.5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #adb8ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 input[type=text], input[type=email], input[type=number], input[type=password], input[type=search] {
     width: 100%;
     padding: 5px 5px;

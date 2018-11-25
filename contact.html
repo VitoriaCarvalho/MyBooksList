@@ -106,8 +106,8 @@
                         </select>
                     </div>
                     <div class="col-6">
-                        <label for="old">Idade</label><br>
-                        <input type="number" id="old" required min="16">
+                        <label for="born">Data de nascimento</label><br>
+                        <input type="date" id="born" required>
                     </div>
                     <div class="col-12">
                         <label for="msg">Mensagem</label><br>
@@ -149,8 +149,8 @@
                 <label for="uname"><b>Nome de usuário</b></label>
                 <input type="text" placeholder="Entre com seu nome de usuário" name="uname" id="uname" required>
 
-                <label for="email"><b>E-mail</b></label>
-                <input type="email" placeholder="Entre com seu e-mail" name="email" id="email" required>
+                <label for="e-mail"><b>E-mail</b></label>
+                <input type="email" placeholder="Entre com seu e-mail" name="email" id="e-mail" required>
 
                 <label for="psw"><b>Senha</b></label>
                 <input type="password" placeholder="Entre com sua senha" name="psw" id="psw" required>
@@ -240,7 +240,7 @@
             // Change <img> of gender
             changeGender()
 
-            // Change msg about years old of user
+            // Change msg about years born of user
             changeOld()
 
             // When the user clicks the button, open the modal 
@@ -283,20 +283,25 @@
         }
 
         function changeOld() {
-            var old = document.getElementById("old").value
+            var born = document.getElementById("born").value
+            // console.log(born)
+            
+            var date = new Date()
+            var old = date.getFullYear() - born.split('-')[0]
+            // console.log(old)
 
             if (old >= 18) {
-                document.getElementById("pOld").innerHTML = 'Você é maior de idade!'
+                document.getElementById("pOld").innerHTML = 'Sua idade é de ' + old + ' anos. Portanto, você é maior de idade!'
             } else {
-                document.getElementById("pOld").innerHTML = 'Você é menor de idade!'
+                document.getElementById("pOld").innerHTML = 'Sua idade é de ' + old + ' anos. Portanto, você é menor de idade!'
             }
         }
 
         function cleanFields() {
             document.getElementById("name").value = ''
-            document.getElementById("email").value = ''
+            document.getElementById("e-mail").value = ''
             document.getElementById("gender").value = ''
-            document.getElementById("old").value = ''
+            document.getElementById("born").value = ''
             document.getElementById("msg").value = ''
         }
     </script>
