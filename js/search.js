@@ -22,9 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
         var title = contents[index].getElementsByTagName('h4')[0].innerHTML;
         // console.log(title)
 
+        // Neste if é verificado se a pesquisa está contida no título em questão na iteração
         if (title.toUpperCase().indexOf(filter) > -1) {
+            // Neste é chamado a função que torna o item visível
             addClass(contents[index], "show")
         } else {
+            // Neste é chamado a função que torna o item invisível
             removeClass(contents[index], "show")
         }
     }
