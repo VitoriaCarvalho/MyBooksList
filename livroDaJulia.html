@@ -20,7 +20,7 @@
         </div>
         <div class="col-5">
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="authors.html">Autores</a></li>
                 <li><a href="books.html">Livros</a></li>
                 <li><a href="contact.html">Contato</a></li>
@@ -87,7 +87,7 @@
                     <div class="row">
                         <div class="col-4">
                             <img src="assets/img/como_agarrar_uma_herdeira.jpg" alt="Como agarrar uma herdeira" style="width: 160px; margin-top: 16px;">
-                            <button class="btn">Avaliar</button>
+                            <button class="btn" onclick="document.getElementById('id04').style.display='block'">Avaliar</button>
                             <button class="btn">Adicionar à lista</button>
                         </div>
                         <div class="col-8">
@@ -129,19 +129,6 @@
                 </div>
                 <div class="col-12 bookBox card" style="background-color: #adb8ffff;">
                     <h3 style="margin-bottom: 0px; margin-top: 0; color: #fff; text-align: center;">Comentários (723)</h3>
-                    <!-- <div class="row">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img src="" width="30px" alt="">
-                                </div>
-                                <div class="10">
-                                    <p><b>Mininu</b></p>
-                                    <p>blablabla</p>
-                                </div>
-                            </div>
-                        </div>            
-                    </div> -->
                 </div>
                 <div class="col-12 bookBox card">
                     <div style="text-align: center;">
@@ -154,7 +141,8 @@
                         </div>
                         <div class="col-10">
                             <p style="color:blue;"> <b>sandhyamohanraj</b></p>
-                            <p style="text-align: justify">Como Agarrar uma herdeira é mais um livro maravilhoso da Julia Quinn! Me apaixonei de
+                            <p style="text-align: justify">Como Agarrar uma herdeira é mais um livro maravilhoso da
+                                Julia Quinn! Me apaixonei de
                                 cara pela Caroline, pelo Blake e, é claro, por James!
                                 Houve apenas um pequeno erro na tradução na página 264, em que a data citada diz "13 de
                                 julho" e na verdade deveria ser "30 de julho".
@@ -201,7 +189,6 @@
             </div>
         </form>
     </div>
-
     <div id="id02" class="modal">
         <form class="modal-content animate" action="javascript:checkCookie('id02')">
             <div class="row" style="padding: 16px;">
@@ -284,9 +271,83 @@
             </div>
         </form>
     </div>
+    <div id="id04" class="modal">
+        <form class="modal-content animate" action="javascript:rating()">
+            <div class="row" style="padding: 16px;">
+                <label for="nota"><b>Informe a nota</b></label>
+                <input type="number" min="1" max="10" placeholder="Entre com a nota do livro" id="nota" name="nota"
+                    required autofocus>
+
+                <label for="stars"><b>Informe a quantidade de estrelas para à avaliação</b></label>
+                <br><br>
+                <div class="row">
+                    <div class="col-2_5">
+                        <label class="container">1
+                            <input type="radio" name="stars" required>
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">2
+                            <input type="radio" name="stars">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">3
+                            <input type="radio" name="stars">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">4
+                            <input type="radio" name="stars">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                    <div class="col-2_5">
+                        <label class="container">5
+                            <input type="radio" name="stars">
+                            <span class="radiobtn"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <div class="row">
+                    <div class="col-6">
+                        <button type="submit">Avaliar</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="footer">
         <h2>Site feito por Jederson Luz e Vitória Carvalho</h2>
     </div>
+
+    <script>
+        function rating() {
+            // Feedback para o usuário ter noção de que a operação realmente aconteceu
+            alert('Avaliação realizada com sucesso!')
+
+            // Desliga o modal
+            document.getElementById('id04').style.display='none'
+
+            // Limpa o campo nota
+            document.getElementById('nota').value = ''
+
+            // Captura todos os radio das estrelas
+            var stars = document.getElementsByName('stars')
+            for (var index = 0; index < stars.length; index++) {
+                // Desmarca cada um dos radio
+                stars[index].checked = false
+            }
+        }
+    </script>
 </body>
 
 </html>
