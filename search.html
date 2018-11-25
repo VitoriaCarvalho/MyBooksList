@@ -24,6 +24,7 @@
 
 <body>
     <script src="js/login.js"></script>
+    <script src="js/search.js"></script>
     <header class="row">
         <div class="col-2">
             <span><a href="index.html">MyBooksList</a></span>
@@ -38,7 +39,7 @@
             </ul>
         </div>
         <div class="col-2 search-container">
-            <form action="search.html">
+            <form action="#">
                 <div class="row">
                     <div class="col-9">
                         <input type="text" placeholder="Pesquisar..." name="search">
@@ -73,86 +74,9 @@
         </div>
     </header>
     <div class="row section">
-        <div class="col-4">
-            <div class="card">
-                <h3>Filtrar Pesquisa</h3>
-                <p>Gênero</p>
-                <div class="row">
-                    <div class="col-6">
-                        <label class="container">Ação
-                            <input type="checkbox" name="gender1" id="acao" value="acao" onclick="fs('acao')">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <label class="container">Romance
-                            <input type="checkbox" name="gender2" id="romance" value="romance" onclick="fs('romance')">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <label class="container">Ficção
-                            <input type="checkbox" name="gender3" id="ficcao" value="ficcao" onclick="fs('ficcao')">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <label class="container">Aventura
-                            <input type="checkbox" name="gender4" id="aventura" value="aventura" onclick="fs('aventura')">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <label class="container">Drama
-                            <input type="checkbox" name="gender5" id="drama" value="drama" onclick="fs('drama')">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <label class="container">Fantasia
-                            <input type="checkbox" name="gender6" id="fantasia" value="fantasia" onclick="fs('fantasia')">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <p>Classificação em Estrelas</p>
-                <div class="row">
-                    <div class="col-2_5">
-                        <label class="container">1
-                            <input type="radio" name="radio" onclick="filterSelection(' 1')">
-                            <span class="radiobtn"></span>
-                        </label>
-                    </div>
-                    <div class="col-2_5">
-                        <label class="container">2
-                            <input type="radio" name="radio" onclick="filterSelection(' 2')">
-                            <span class="radiobtn"></span>
-                        </label>
-                    </div>
-                    <div class="col-2_5">
-                        <label class="container">3
-                            <input type="radio" name="radio" onclick="filterSelection(' 3')">
-                            <span class="radiobtn"></span>
-                        </label>
-                    </div>
-                    <div class="col-2_5">
-                        <label class="container">4
-                            <input type="radio" name="radio" onclick="filterSelection(' 4')">
-                            <span class="radiobtn"></span>
-                        </label>
-                    </div>
-                    <div class="col-2_5">
-                        <label class="container">5
-                            <input type="radio" name="radio" onclick="filterSelection(' 5')">
-                            <span class="radiobtn"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-8">
+        <div class="col-8" name="contents">
             <div class="row">
-                <div class="col-12 bookBox card filterDiv romance 5">
+                <article class="col-12 bookBox card filterDiv romance 5">
                     <div class="row">
                         <div class="col-2">
                             <a href="livroDaJulia.html"><img class="bookSection" src="assets/img/como_agarrar_uma_herdeira.jpg" alt="Almas gêmeas"></a>
@@ -167,8 +91,8 @@
                                     mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 4">
+                </article>
+                <article class="col-12 bookBox card filterDiv 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/acordo_pecaminoso.jpg" alt="Um Acordo Pecaminoso">
@@ -183,8 +107,8 @@
                                 independente... <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 4">
+                </article>
+                <article class="col-12 bookBox card filterDiv 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/almas_gemeas.jpg" alt="Almas gêmeas">
@@ -198,8 +122,8 @@
                                 na Carolina do Norte... <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 5">
+                </article>
+                <article class="col-12 bookBox card filterDiv 5">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/homem_mais_inteligente.jpg" alt="Almas gêmeas">
@@ -214,8 +138,8 @@
                                 <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 3">
+                </article>
+                <article class="col-12 bookBox card filterDiv 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/primeiro_homem.jpg" alt="Almas gêmeas">
@@ -229,8 +153,8 @@
                                 salto para a humanidade.” <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv ficcao 3">
+                </article>
+                <article class="col-12 bookBox card filterDiv ficcao 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/oGuiaDoMochileiroDasGalaxias.jpeg" alt="Almas gêmeas">
@@ -244,8 +168,8 @@
                                 Adams, que conta as aventuras espaciais do... <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv ficcao acao fantasia 5">
+                </article>
+                <article class="col-12 bookBox card filterDiv ficcao acao fantasia 5">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/sword_art_online_progressive.jpg" alt="Almas gêmeas">
@@ -258,8 +182,8 @@
                                     mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 4">
+                </article>
+                <article class="col-12 bookBox card filterDiv 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/irma_da_lua.jpg" alt="Almas gêmeas">
@@ -272,8 +196,8 @@
                                 tradição, paixão e sobrevivência. <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv fantasia acao 5">
+                </article>
+                <article class="col-12 bookBox card filterDiv fantasia acao 5">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/cronicas_narnia.jpg" alt="Almas gêmeas">
@@ -287,8 +211,8 @@
                                 Lewis. <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 3">
+                </article>
+                <article class="col-12 bookBox card filterDiv 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/ligar_o_foda-se.jpg" alt="Almas gêmeas">
@@ -302,8 +226,8 @@
                                     mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 2">
+                </article>
+                <article class="col-12 bookBox card filterDiv 2">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/democracias_morrem.jpg" alt="Almas gêmeas">
@@ -318,8 +242,8 @@
                                     mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv ficcao 3">
+                </article>
+                <article class="col-12 bookBox card filterDiv ficcao 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/brave_new_world.jpg" alt="Almas gêmeas">
@@ -333,8 +257,8 @@
                                     mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv acao fantasia 4">
+                </article>
+                <article class="col-12 bookBox card filterDiv acao fantasia 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/harry_poter.jpg" alt="Almas gêmeas">
@@ -348,8 +272,8 @@
                                 Harry foi uma espécie de gata borralheira: ... <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv acao ficcao fantasia 4">
+                </article>
+                <article class="col-12 bookBox card filterDiv acao ficcao fantasia 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/SAOP3.jpg" alt="Almas gêmeas">
@@ -363,8 +287,8 @@
                                     class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv 3">
+                </article>
+                <article class="col-12 bookBox card filterDiv 3">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/the_book_thief.jpg" alt="Almas gêmeas">
@@ -379,8 +303,8 @@
                                     mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv romance 4">
+                </article>
+                <article class="col-12 bookBox card filterDiv romance 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/como_se_casar_com_um_marques.jpg" alt="Almas gêmeas">
@@ -395,8 +319,8 @@
                                 <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 bookBox card filterDiv romance 4">
+                </article>
+                <article class="col-12 bookBox card filterDiv romance 4">
                     <div class="row">
                         <div class="col-2">
                             <img class="bookSection" src="assets/img/Como eu era antes de você.jpg" alt="Almas gêmeas">
@@ -410,7 +334,7 @@
                                 muito... <a href="#" class="view_more">ver mais</a></p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </div>
