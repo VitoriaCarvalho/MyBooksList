@@ -42,20 +42,18 @@
         <div class="col-3">
             <ul style="float: right;">
                 <li id="login1">
-                    <button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-                        href="#">
+                    <button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
                         Login
                     </button>
                 </li>
                 <li id="login2">
-                    <button class="login" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"
-                        href="#">
+                    <button class="login" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
                         Cadastre-se
                     </button>
                 </li>
                 <li id="logado" style="display: none;">
                     <button id="loginName" class="login" onclick="document.getElementById('id03').style.display='block'"
-                        style="width:auto;" href="#">
+                        style="width:auto;">
                         Perfil
                     </button>
                 </li>
@@ -73,8 +71,8 @@
             </div>
             <div class="modal-body">
                 <p id="pOld"></p>
-                <img src="assets/img/boy.png" alt="boy" height="100px" id="imgBoy">
-                <img src="assets/img/girl.png" alt="girl" height="100px" id="imgGirl">
+                <img src="assets/img/boy.png" alt="boy" height="100" id="imgBoy">
+                <img src="assets/img/girl.png" alt="girl" height="100" id="imgGirl">
             </div>
             <div class="modal-footer">
                 <h3>Mensagem enviada com sucesso!</h3>
@@ -203,11 +201,9 @@
                     </div>
                     <div class="col-2 bookBox">
                         <a href="#">
-                            <a href="#">
-                                <!-- <div class="book" style="height:200px; width: 130px;"></div> -->
-                                <img class="bookSection" src="assets/img/simplesmente_o_paraiso.jpg" alt="Simplesmente o paraíso">
-                                <p>Simplesmente o paraíso</p>
-                            </a>
+                            <!-- <div class="book" style="height:200px; width: 130px;"></div> -->
+                            <img class="bookSection" src="assets/img/simplesmente_o_paraiso.jpg" alt="Simplesmente o paraíso">
+                            <p>Simplesmente o paraíso</p>
                         </a>
                     </div>
                 </div>
@@ -285,7 +281,7 @@
         function changeOld() {
             var born = document.getElementById("born").value
             // console.log(born)
-            
+
             var date = new Date()
             var old = date.getFullYear() - born.split('-')[0]
             // console.log(old)

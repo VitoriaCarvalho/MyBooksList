@@ -42,20 +42,18 @@
         <div class="col-3">
             <ul style="float: right;">
                 <li id="login1">
-                    <button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-                        href="#">
+                    <button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
                         Login
                     </button>
                 </li>
                 <li id="login2">
-                    <button class="login" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"
-                        href="#">
+                    <button class="login" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
                         Cadastre-se
                     </button>
                 </li>
                 <li id="logado" style="display: none;">
                     <button id="loginName" class="login" onclick="document.getElementById('id03').style.display='block'"
-                        style="width:auto;" href="#">
+                        style="width:auto;">
                         Perfil
                     </button>
                 </li>
@@ -127,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 bookBox card" style="background-color: #adb8ffff;">
+                <div class="col-12 bookBox card coments">
                     <h3 style="margin-bottom: 0px; margin-top: 0; color: #fff; text-align: center;">Comentários (723)</h3>
                 </div>
                 <div class="col-12 bookBox card">
@@ -249,11 +247,9 @@
                     </div>
                     <div class="col-2 bookBox">
                         <a href="#">
-                            <a href="#">
-                                <!-- <div class="book" style="height:200px; width: 130px;"></div> -->
-                                <img class="bookSection" src="assets/img/simplesmente_o_paraiso.jpg" alt="Simplesmente o paraíso">
-                                <p>Simplesmente o paraíso</p>
-                            </a>
+                            <!-- <div class="book" style="height:200px; width: 130px;"></div> -->
+                            <img class="bookSection" src="assets/img/simplesmente_o_paraiso.jpg" alt="Simplesmente o paraíso">
+                            <p>Simplesmente o paraíso</p>
                         </a>
                     </div>
                 </div>
@@ -278,7 +274,7 @@
                 <input type="number" min="1" max="10" placeholder="Entre com a nota do livro" id="nota" name="nota"
                     required autofocus>
 
-                <label for="stars"><b>Informe a quantidade de estrelas para à avaliação</b></label>
+                <label><b>Informe a quantidade de estrelas para à avaliação</b></label>
                 <br><br>
                 <div class="row">
                     <div class="col-2_5">
@@ -335,7 +331,7 @@
             alert('Avaliação realizada com sucesso!')
 
             // Desliga o modal
-            document.getElementById('id04').style.display='none'
+            document.getElementById('id04').style.display = 'none'
 
             // Limpa o campo nota
             document.getElementById('nota').value = ''

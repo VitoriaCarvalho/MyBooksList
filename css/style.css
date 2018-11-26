@@ -55,7 +55,7 @@ header {
     margin: 0;
     height: 56px;
     padding: 0 16px 0 24px;
-    background-color: #adb8ffff;
+    background-color: #adb8ff;
     color: #e5eae9;
 }
 
@@ -287,6 +287,10 @@ textarea {
     box-sizing: border-box;
 }
 
+.coments {
+    background-color: #adb8ff;
+}
+
 .moreComents {
     color: gray;
 }
@@ -297,7 +301,7 @@ textarea {
 }
 
 .btn {
-    background-color: #adb8ffff;
+    background-color: #adb8ff;
     color: white;
     padding: 10px 20px;
     margin: 8px 0;
@@ -310,7 +314,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #adb8ffff;
+    background-color: #adb8ff;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -392,7 +396,7 @@ a:hover {
     padding: 20px;
     font-size: 12px;
     text-align: center;
-    background-color: #adb8ffff;
+    background-color: #adb8ff;
     color: #e5eae9;
     margin-top: 20px;
 }
